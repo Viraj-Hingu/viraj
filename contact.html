@@ -42,67 +42,47 @@
             </div>
         </div>
     </nav>
-
-    <div class="container marketing my-4">
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="rounded-circle" width="140" height="140" src="ai.jpg" alt="AI Basics">
-                <h2>AI Basics</h2>
-                <p>Learn the fundamentals of Artificial Intelligence and how it impacts our world.</p>
-        
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" width="140" height="140" src="machin.jpeg" alt="Machine Learning">
-                <h2>Machine Learning</h2>
-                <p>Discover how machines learn from data to improve their performance.</p>
-                
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" width="140" height="140" src="deep.jpeg" alt="Deep Learning">
-                <h2>Deep Learning</h2>
-                <p>Explore advanced neural networks and their applications in AI.</p>
-            </div>
-            <li><hr class="dropdown-divider"></li>
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
         </div>
-        <!-- START THE FEATURETTES -->
-        <div class="container my-4">
-            <div class="row featurette d-flex justify-content-center align-items-center">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Understanding AI. <span class="text-muted">What you need to know.</span></h2>
-                    <p class="lead">Artificial Intelligence is transforming industries by automating tasks and providing insights that were previously unattainable.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about1.jpg" alt="">  
-                </div>
-            </div>
-            <div class="row featurette d-flex justify-content-center align-items-center">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">The Future of Machine Learning. <span class="text-muted">Stay ahead of the curve.</span></h2>
-                    <p class="lead">Machine learning algorithms are being used in diverse applications, from finance to healthcare, making data-driven decisions faster and more accurately.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about2.jpg" alt="">  
-                </div>
-            </div>
-            <div class="row featurette d-flex justify-content-center align-items-center">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Deep Learning Revolution. <span class="text-muted">A new era in AI.</span></h2>
-                    <p class="lead">Deep learning is enabling breakthroughs in image recognition, natural language processing, and autonomous systems, reshaping how we interact with technology.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about3.jpg" alt="">  
-                </div>
-            </div>
-            <div class="row featurette d-flex justify-content-center align-items-center">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Ethics in AI. <span class="text-muted">A critical discussion.</span></h2>
-                    <p class="lead">As AI continues to advance, discussions about ethics, bias, and the future of work are more important than ever. Understanding these aspects is crucial for responsible AI development.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about4.jpg" alt="">  
-                </div>
-            </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
         </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+  
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
         <footer class="container">
             <p class="float-end"><a href="#">Back to top</a></p>
             <p>© 2024–2025 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
