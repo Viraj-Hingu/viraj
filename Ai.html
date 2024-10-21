@@ -10,14 +10,14 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="web.html">I Coder</a>
+            <a class="navbar-brand" href="index.html">I Coder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="web.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -35,13 +35,127 @@
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
+                
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#signinModal">Sign Up</button>
+                  </div>
             </div>
         </div>
     </nav>
+
+    <!-- Button trigger modal -->
+
+
+<!-- login  -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Identify</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Customer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Employee
+                    </label>
+                  </div>
+             
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        HOD
+                      </label>
+                    </div>
+                </div>
+              </fieldset>
+              
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Button trigger modal -->
+  
+    
+    <!-- sign in -->
+    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signinModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="container mt-4">
+                  <div class="row justify-content-center">
+                      <div class="col-md-8">
+                         
+                          <form>
+                              <div class="form-group">
+                                  <label for="name">Full Name</label>
+                                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">Email address</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password">Password</label>
+                                  <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="confirmPassword">Confirm Password</label>
+                                  <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                              </div>
+                              <br>
+                              <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                          </form>
+                          <div class="text-center mt-3">
+                              <p>Already have an account? <a href="#">Sign in</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
 
     <div class="container marketing my-4">
         <div class="row">
@@ -72,7 +186,7 @@
                     <p class="lead">Artificial Intelligence is transforming industries by automating tasks and providing insights that were previously unattainable.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about1.jpg" alt="">  
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="aii.jpeg" alt="">  
                 </div>
             </div>
             <div class="row featurette d-flex justify-content-center align-items-center">
@@ -81,7 +195,7 @@
                     <p class="lead">Machine learning algorithms are being used in diverse applications, from finance to healthcare, making data-driven decisions faster and more accurately.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about2.jpg" alt="">  
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="machinn.jpg" alt="">  
                 </div>
             </div>
             <div class="row featurette d-flex justify-content-center align-items-center">
@@ -90,7 +204,7 @@
                     <p class="lead">Deep learning is enabling breakthroughs in image recognition, natural language processing, and autonomous systems, reshaping how we interact with technology.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about3.jpg" alt="">  
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="dee.avif" alt="">  
                 </div>
             </div>
             <div class="row featurette d-flex justify-content-center align-items-center">
@@ -99,7 +213,7 @@
                     <p class="lead">As AI continues to advance, discussions about ethics, bias, and the future of work are more important than ever. Understanding these aspects is crucial for responsible AI development.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="about4.jpg" alt="">  
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="erhics.jpeg" alt="">  
                 </div>
             </div>
         </div>
